@@ -1,0 +1,64 @@
+.popout {
+    background: #fff;
+    position: absolute;
+    width: 300px;
+    border-bottom: $brand_color 3px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: index($z-index, popout); // High z-index to bring it ABOVE other content
+
+    &:before {
+        background: #fff;
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 8px;
+        z-index: index($z-index, popout-before); // z-index of 1 to bring it BELOW popout__inner
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        transform: rotate(45deg);
+    }//:before
+
+    &__inner {
+        background: #fff;
+        position: relative;
+        z-index: index($z-index, popout-inner); // z-index of 2 to bring it ABOVE the :before pseudo-selector
+    }//.popout__inner
+
+    &__content {
+        padding: 20px;
+    }//.popout__content
+
+    &__full-list {
+        li {
+            background: #fff;
+            padding: 12px 20px;
+            font-weight: 600;
+            color: #666;
+            @include font-size(12px);
+
+            &:not(:first-child) {
+                border-top: #e1e1e1 1px solid;
+            }//:not(:first-child)
+
+            &:nth-child(even) {
+                background: #f4f4f4;
+            }//:nth-child(odd)
+        }//li
+
+        .icon {
+            position: relative;
+            top: -6px;
+            margin-right: 10px;
+            color: $brand_color;
+            @include font-size(15px);
+        }//.icon
+    }//.popout__full-list
+
+    &__scrollable {
+        max-height: 300px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }//.popout__scrollable
+}//.popout

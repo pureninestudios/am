@@ -1,0 +1,31 @@
+.music-interaction {
+    background: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #bbb;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+
+    .glyphicons {
+        position: relative;
+        top: -3px;
+    }//.glyphicons
+
+    .fa-twitter {
+        color: $twitter_col;
+    }//.fa-twitter
+
+    .fa-facebook {
+        color: $facebook_col;
+    }//.fa-facebook
+
+    &:hover {
+        color: #666;
+    }//:hover
+}//.music-interaction

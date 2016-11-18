@@ -1,0 +1,54 @@
+// REM / PX mixin
+@function calculate_rem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: calculate_rem($size);
+    // Modernizr based fallback
+    .no-cssremunit & {
+        font-size: $size;
+    }
+}
+
+// Clearfix
+@mixin sd-clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+    }
+}
+
+// Retina displays
+@mixin background-image-retina($file, $type, $width, $height) {
+    background-image: url($file + '.' + $type);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        & {
+            background-image: url($file + '@2x.' + $type);
+            background-size: $width $height;
+        }
+    }
+}
+
+// CSS Triangles
+
+@mixin css-triangle($color: $brand_color) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 4px 0;
+    border-color: $color transparent transparent transparent;
+}
+
+@mixin css-triangle--up($color: $brand_color) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 6px;
+    border-color: transparent transparent $color transparent;
+}

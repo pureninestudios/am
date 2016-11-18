@@ -1,0 +1,56 @@
+.account-notifications {
+    position: relative;
+
+    &__user-alert {
+        position: absolute;
+        top: -7px;
+        right: -7px;
+    }//.account-summary__user-alert
+}//.account-summary__notifications
+
+.account-summary {
+    position: relative;
+    display: inline-block;
+
+    &__info {
+        float: left;
+        line-height: 40px;
+        font-weight: 600;
+        position: relative;
+        @include font-size(13px);
+
+        p {
+            padding-right: 25px;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                margin-top: -2px;
+                @include css-triangle;
+            }//:after
+        }//p
+    }//.account-summary__info
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: block;
+    }//.account-summary__user-info
+
+    &__user-alert {
+        position: absolute;
+        right: 15px;
+
+        @media screen {
+            display: block; // Override default breakpoint
+        }//@media
+
+        @media screen and (min-width: ($header_breakpoint + 1)) {
+            display: none;
+        }//@media
+    }//.account-summary__user-alert
+}//.account-summary

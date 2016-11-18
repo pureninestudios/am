@@ -1,0 +1,23 @@
+.music-feed__filter {
+    margin-bottom: 60px;
+    font-weight: 700;
+
+    li {
+        float: left;
+    }//li
+
+    a {
+        padding: 14px 18px;
+        color: #222;
+        border-bottom: transparent 2px solid;
+
+        &:hover {
+            color: $brand_color;
+        }//:hover
+    }//a
+
+    li.music-feed__filter--active a {
+        color: $brand_color;
+        border-color: $brand_color;
+    }//li.active a
+}//.music-feed__filter

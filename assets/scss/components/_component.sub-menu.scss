@@ -1,0 +1,30 @@
+.sub-menu {
+    background: #222;
+    min-width: 100%;
+    padding: 5px 0;
+
+    a {
+        color: #fff;
+        padding: 8px 13px;
+        font-weight: 600;
+        display: block;
+        white-space: nowrap;
+        line-height: 1.8;
+        @include font-size(12px);
+
+        &:hover {
+            color: $brand_color;
+        }//:hover
+    }//a
+}//.sub-menu
+
+.sub-menu__item {
+    line-height: 1;
+
+    i {
+        color: $brand_color;
+        margin-right: 8px;
+        position: relative;
+        top: -3px;
+    }//i
+}//.sub-menu__item

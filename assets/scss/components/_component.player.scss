@@ -1,0 +1,203 @@
+.player {
+    background-size: cover;
+    background-position: center;
+
+    &--fixed {
+        background-color: #000;
+        width: 100%;
+        height: 90px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-top: #333 7px solid;
+        z-index: index($z-index, player);
+        transition: 0.3s $ease-in-out-quad;
+        transform: translateY(100%);
+    }//.player--fixed
+
+    &--is-active {
+        transform: translateY(0);
+    }//.player--is-active
+
+    &__slider {
+        background: $brand_color;
+        position: absolute;
+        height: 7px;
+        width: 29%;
+        top: -7px;
+        left: 0;
+        z-index: index($z-index, player);
+
+        &:after {
+            content: "";
+            background: #fff;
+            display: block;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: -5px -5px 0 0;
+        }//:after
+    }//.player__slider
+
+    &__inner {
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 17px 45px;
+    }//.player__inner
+
+    &__artwork {
+        width: 50px;
+        float: left;
+        border: #2f2f2f 1px solid;
+    }//.player__artwork
+
+    &__details {
+        padding-left: 20px;
+        color: #fff;
+        line-height: 1;
+
+        &-wrap {
+            float: left;
+            display: flex;
+            align-items: center;
+        }//.player__details-wrap
+    }//.player__details
+
+    &__heading {
+        font-size: 14px;
+        margin-bottom: 4px;
+        letter-spacing: -0.4px;
+    }//player__heading
+
+    &__title {
+        font-weight: 700;
+    }//.player__title
+
+    &__featuring {
+        margin: 0;
+    }//.player__featuring
+
+    &__time {
+        float: left;
+        font-size: 13px;
+        font-weight: 700;
+    }//.player__time
+
+    &__icons {
+        font-size: 18px;
+        margin-left: 20px;
+        float: left;
+
+        @media screen and (max-width: ($breakpoint_lg - 1)) {
+            background: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            line-height: 83px;
+            display: none;
+            z-index: index($z-index, player-icons);
+        }//media
+
+        &-wrap {
+            float: right;
+            line-height: $player_height;
+            color: #fff;
+        }//.player__icons-wrap
+    }//.player__icons
+
+    &__icon {
+        padding: 0 5px;
+        transition: 0.2s ease-in-out;
+        outline: none !important;
+
+        .glyphicons {
+            position: relative;
+            top: -3px;
+        }//.glyphicons
+
+        .volume-down {
+            top: 2px;
+            font-size: 25px;
+        }//.volume-down
+
+        svg {
+            width: 32px;
+            height: auto;
+            position: relative;
+            top: 2px;
+
+            path {
+                fill: #fff;
+                transition: 0.2s ease-in-out;
+            }//path
+
+            &:hover path {
+                fill: $brand_color;
+            }//:hover path
+        }//svg
+
+        &:hover {
+            color: $brand_color;
+        }//:hover
+
+        &-trigger {
+            display: block;
+            font-size: 25px;
+            margin-left: 30px;
+            position: relative;
+            top: -3px;
+            cursor: pointer;
+            float: right;
+            z-index: index($z-index, player-icon-trigger);
+
+            @media screen and (min-width: $breakpoint_lg) {
+                display: none;
+            }//media
+        }//.player__icon-trigger
+    }//.player__icon
+
+    &__controls {
+        color: #fff;
+        line-height: $player_height;
+        height: $player_height;
+
+        &-wrap {
+            padding: 0 30%;
+        }//.player__controls-wrap
+
+        .glyphicons {
+            position: relative;
+            top: -16px;
+        }//.glyphicons
+    }//.player__controls
+
+    &__control {
+        font-size: 22px;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: $brand_color;
+        }//:hover
+
+        &--main {
+            font-size: 45px;
+            padding: 0 22px;
+
+            .glyphicons {
+                top: -11px;
+            }//.glyphicons
+        }//.player__control--main
+    }//.player__control
+}//.player

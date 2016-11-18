@@ -1,0 +1,26 @@
+.button,
+button {
+    background: $brand_color;
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 15px;
+    line-height: 1;
+    text-transform: uppercase;
+    @include font-size(13px);
+
+    &:hover {
+        background: $brand_color--dark;
+        color: #fff;
+    }//:hover
+
+    &__icon {
+        @include font-size(13px);
+        vertical-align: middle;
+        margin: -2px 5px 0 0;
+    }//.button__icon
+
+    &--radius {
+        border-radius: 25px;
+    }//.button--radius
+}//a.button

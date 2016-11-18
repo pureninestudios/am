@@ -1,0 +1,42 @@
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+
+    &__input {
+        background: #f3f3f3;
+        border: none;
+        border-radius: 20px;
+        padding: 0 20px 0 40px;
+        width: 100%;
+        height: 40px;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.04);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }//.search__input
+
+    &__submit,
+    &__submit--faux {
+        position: absolute;
+        width: 40px;
+        height: 34px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: center;
+    }//.submits
+
+    &__submit--faux {
+        background-repeat: no-repeat;
+        background-position: center;
+        @include background-image-retina('#{$img_path}/search-icon', 'png', 15px, 15px);
+        z-index: index($z-index, 'search-faux-submit');
+    }//.main-header__submit-faux
+
+    &__submit {
+        z-index: index($z-index, 'search-real-submit'); // To bring it above the "faux" submit button
+        opacity: 0;
+    }//.main-header__submit
+}//.search

@@ -1,0 +1,65 @@
+.tooltip {
+    background: #222;
+    padding: 10px 15px;
+    position: absolute;
+    max-width: 250px;
+    line-height: normal;
+    opacity: 0;
+    transform: scale(0.9);
+    transform-origin: top left;
+    z-index: -1; // Low z-index so it stays behind things when not in use
+    @include font-size(12px);
+
+    a {
+        display: block;
+        color: #fff;
+        padding: 5px 0;
+        white-space: nowrap;
+
+        &:hover {
+            color: $brand_color;
+        }//:hover
+    }//a
+
+    &--radius {
+        border-radius: 3px;
+    }//.tooltip--radius
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        @include css-triangle--up(#222);
+        border-width: 0 5px 6px; // Keep this after the mixin
+    }//:before
+
+    &--right-arrow {
+        transform-origin: top right;
+
+        &:before {
+            left: auto;
+            right: 8px;
+        }//.tooltip--right-arrow:before
+    }//.tooltip--right-arrow
+
+    &--active {
+        z-index: index($z-index, 'tooltip-active'); // high z-index so it comes above all content;
+        animation: tooltipIn 0.25s forwards cubic-bezier(0.68, -2, 0.265, 3);
+    }//.tooltip--active
+}//.tooltip
+
+@keyframes tooltipIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}//@keyframes

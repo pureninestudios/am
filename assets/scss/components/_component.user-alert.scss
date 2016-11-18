@@ -1,0 +1,17 @@
+.user-alert {
+    background: $brand_color;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    @include font-size(9px);
+}//.user-alert
+
+.user-alert__mobile {
+    @media screen and (min-width: 640px) {
+        display: none;
+    }//@media
+}//.user-alert__mobile

@@ -1,0 +1,67 @@
+.waveform {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    bottom: 0;
+
+    &-wrap {
+        position: relative;
+        height: 65px;
+    }//.waveform-wrap
+
+    span {
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        width: 2px;
+        height: 10px;
+        bottom: 0;
+    }//span
+
+    &__time {
+        background: rgba(255, 255, 255, 0.8);
+        font-weight: 700;
+        line-height: 20px;
+        padding: 0 7px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        font-size: 11px;
+    }//.waveform__time
+
+    &__elapsed {
+        left: 0;
+    }//.waveform__elapsed
+
+    &__duration {
+        right: 0;
+    }//.waveform__duration
+}//.waveform
+
+// *************************************************
+// REMOVE FROM PRODUCTION
+// *************************************************
+
+@mixin space {
+    @for $i from 1 through 350 {
+        &:nth-child(#{$i}) {
+            left: #{$i * 3}px;
+            height: random(44) + px;
+        }
+    }
+}
+
+@mixin elapsed {
+    @for $i from 1 through 94 {
+        &:nth-child(#{$i}) {
+            background: rgba($brand_color, 0.8);
+        }
+    }
+}
+
+.waveform {
+    span {
+        @include space;
+        @include elapsed;
+    }
+}//.waveform

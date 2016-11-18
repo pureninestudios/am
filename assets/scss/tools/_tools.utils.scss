@@ -1,0 +1,99 @@
+/* .01
+*/
+// Floats
+
+.u-left {
+    float: left;
+}//.left
+
+.u-right {
+    float: right;
+}//.right
+
+/* .02
+*/
+// Text alignments
+
+.u-text-left {
+    text-align: left;
+}//.text-left
+
+.u-text-right {
+    text-align: right;
+}//.text-right
+
+.u-text-center {
+    text-align: center;
+}//.text-center
+
+/* .03
+*/
+// "As table" classes
+
+.u-as-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}//.as-table
+
+.u-as-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}//.as-table-cell
+
+/* .04
+*/
+// Inline list
+
+.u-inline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+    }//li
+
+    a {
+        display: block;
+    }//a
+}//.inline-list
+
+/* .05
+*/
+// Clearfix
+
+.u-group,
+.u-clearfix {
+    @include sd-clearfix;
+}//.group / .clearfix
+
+/* .06
+*/
+// Truncation
+
+.u-trunc {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}//.u-trunc
+
+/* .07
+*/
+// Scrollables
+
+.u-scrollable {
+    &::-webkit-scrollbar {
+        appearance: none;
+        width: 5px;
+    }//::-webkit-scrollbar
+
+    &::-webkit-scrollbar-thumb {
+        width: 3px;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    }//-webkit-scrollbar-thumb
+}//.scrollable

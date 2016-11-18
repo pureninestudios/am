@@ -1,0 +1,112 @@
+.widget {
+    padding: 20px;
+
+    &-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 0 20px;
+        @include font-size(11px);
+    }//.widget-title
+
+    &__menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @include font-size(13px);
+
+        a {
+            display: block;
+        }//a
+
+        &--full {
+            a {
+                padding: 6px 10px;
+                border-left: transparent 4px solid;
+                font-weight: 600;
+            }//a
+
+            li {
+                margin: 0 -10px 6px;
+
+                a:hover {
+                    // NEW STYLES
+                }//a:hover
+            }//li
+        }//.widget__menu--full
+
+        li.current a {
+            background: $brand_color;
+            color: #fff;
+            border-radius: 4px;
+
+            .widget__icon {
+                color: #fff;
+            }//.widget__icon
+        }//li.currnet a
+
+        &--condensed {
+            @include font-size(13px);
+
+            li {
+                margin-bottom: 15px;
+                padding-right: 20px;
+                position: relative;
+            }//li
+
+            a {
+                line-height: 1;
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }//a
+        }//.widget__menu--condensed
+    }//.widget__menu
+
+    &__icon {
+        display: inline-block;
+        margin: -1px 7px 0 0;
+        width: 20px;
+        text-align: center;
+        color: $brand_color;
+        font-size: 16px;
+    }//.widget__icon
+
+    &__avatar {
+        width: 15px;
+        margin-right: 10px;
+    }//.widget__avater
+
+    &__user-alert {
+        position: absolute;
+        top: -1px;
+        right: 0;
+    }//.widget__user-alert
+
+    &__load-stuff {
+        color: #222;
+        font-weight: 600;
+        display: block;
+        padding-top: 5px;
+        cursor: pointer;
+        @include font-size(12px);
+
+        &:after {
+            content: "";
+            display: inline-block;
+            margin-left: 10px;
+        }//:after
+    }//.widget__load-stuff
+
+    &__load-more {
+        &:after {
+            @include css-triangle;
+        }//:after
+    }//.widget__load-more
+
+    &__load-less {
+        &:after {
+            @include css-triangle--up;
+        }//:after
+    }//.load-less
+}//.widget

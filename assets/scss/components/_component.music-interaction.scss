@@ -12,6 +12,10 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: 0.2s;
 
+    .music-interactions--inline & {
+        display: inline-block;
+    }
+
     .glyphicons {
         position: relative;
         top: -3px;

@@ -1,4 +1,4 @@
-<div class="player player--fixed player--wide" style="background-image:url('assets/img/dev/fetty-full.jpg')">
+<div class="player player--fixed player--wide">
 
     <div class="player__slider"></div>
 

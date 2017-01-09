@@ -1,0 +1,18 @@
+.interaction-stats {
+    font-weight: 600;
+
+    &--inline {
+        li {
+            margin-right: 10px;
+            display: inline-block;
+        }//li
+    }//.interaction-stats--inline
+
+    i {
+        color: $brand_color;
+        position: relative;
+        top: -1px;
+        font-size: 15px;
+        margin-right: 2px;
+    }//i
+}//.interaction-stats

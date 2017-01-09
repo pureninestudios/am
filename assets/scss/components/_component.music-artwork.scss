@@ -1,0 +1,43 @@
+.music-artwork {
+    width: 170px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    z-index: index($z-index, music-artwork);
+
+    &--large {
+        width: 230px;
+    }//.music-artwork--large
+
+    &--round {
+        border-radius: 50%;
+    }//.music-artwork--round
+}//.music-artwork
+
+.music-artwork__overlay {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 1;
+    z-index: index($z-index, music-detail-overlay);
+    color: $brand_color;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .glyphicons {
+        transition: 0.2s ease-in-out;
+    }//.glyphicons
+
+    &:hover .glyphicons {
+        transform: scale(1.25);
+    }//:hover .glyphicons
+}//.music-artwork__overlay

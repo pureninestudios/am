@@ -1,0 +1,27 @@
+.ranking-stat {
+    font-size: 20px;
+    color: $brand_color;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+    &__range {
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        color: $default_color;
+        line-height: 1.2;
+    }//.ranking-stat__range
+
+    sup {
+        position: relative;
+        top: -5px;
+        font-size: 65%;
+    }//sup
+
+    .ranking-stats--horizontal & {
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px;
+    }
+}//.ranking-stat

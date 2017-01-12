@@ -12,6 +12,10 @@
         .music-artwork {
             float: left;
         }
+
+        .detailed-dropdown {
+            max-width: 420px;
+        }
     </style>
 
     <div class="l-container">
@@ -134,9 +138,161 @@
 
         <div class="comp">
 
-            <p class="small">Titles</p>
+            <p class="small">Detailed Dropdown</p>
 
-            
+            <div class="detailed-dropdown detailed-dropdown--has-triangle">
+
+                <div class="detailed-dropdown__inner">
+
+                    <ul class="detailed-dropdown__list">
+
+                        <h3 class="detailed-dropdown__title">Artists</h3>
+
+                        <li class="detailed-dropdown__item detailed-dropdown__item--has-thumb u-clearfix">
+
+                            <div class="detailed-dropdown__item-thumb detailed-dropdown__item-thumb--circle">
+
+                                <img src="http://placehold.it/65x65" alt="" />
+
+                            </div><!--/.detailed-dropdown__item-thumb-->
+
+                            <div class="detailed-dropdown__item-content">
+
+                                <h2 class="music-heading music-heading__artist"><strong>Chief Keef</strong></h2>
+
+                                <ul class="music-meta">
+
+                                    <li class="music-meta__item">Followers: <strong>1,395</strong></li>
+
+                                    <li class="music-meta__item">Uploads &amp; Re-Ups: <strong>294</strong></li>
+
+                                </ul>
+
+                            </div><!--/.detailed-dropdown__item-content-->
+
+                        </li><!--/.detailed-dropdown__item-->
+
+                    </ul><!--/.detailed-dropdown__list-->
+
+                    <ul class="detailed-dropdown__list">
+
+                        <h3 class="detailed-dropdown__title">Songs</h3>
+
+                        <li class="detailed-dropdown__item detailed-dropdown__item--has-thumb u-clearfix">
+
+                            <div class="detailed-dropdown__item-thumb detailed-dropdown__item-thumb--radius">
+
+                                <img src="http://placehold.it/65x65" alt="" />
+
+                            </div><!--/.detailed-dropdown__item-thumb-->
+
+                            <div class="detailed-dropdown__item-content">
+
+                                <h2 class="music-heading music-heading__artist">Meek Mill</h2>
+
+                                <h2 class="music-heading music-heading__title"><strong>Ooouuu (The Game Diss)</strong></h2>
+
+                                <p class="music-featuring">Feat. <a href="#">Meek Mill</a>, <a href="#">Another Meek Mill</a>, <a href="#">Third Meek Mill</a></p>
+
+                            </div><!--/.detailed-dropdown__item-content-->
+
+                        </li><!--/.detailed-dropdown__item-->
+
+                        <li class="detailed-dropdown__item detailed-dropdown__item--has-thumb u-clearfix">
+
+                            <div class="detailed-dropdown__item-thumb detailed-dropdown__item-thumb--radius">
+
+                                <img src="http://placehold.it/65x65" alt="" />
+
+                            </div><!--/.detailed-dropdown__item-thumb-->
+
+                            <div class="detailed-dropdown__item-content">
+
+                                <h2 class="music-heading music-heading__artist">Meek Mill</h2>
+
+                                <h2 class="music-heading music-heading__title"><strong>Ooouuu (The Game Diss)</strong></h2>
+
+                            </div><!--/.detailed-dropdown__item-content-->
+
+                        </li><!--/.detailed-dropdown__item-->
+
+                    </ul><!--/.detailed-dropdown__list-->
+
+                    <ul class="detailed-dropdown__list">
+
+                        <h3 class="detailed-dropdown__title">Albums</h3>
+
+                        <li class="detailed-dropdown__item detailed-dropdown__item--has-thumb u-clearfix">
+
+                            <div class="detailed-dropdown__item-thumb detailed-dropdown__item-thumb--radius">
+
+                                <img src="http://placehold.it/65x65" alt="" />
+
+                            </div><!--/.detailed-dropdown__item-thumb-->
+
+                            <div class="detailed-dropdown__item-content">
+
+                                <h2 class="music-heading music-heading__artist">Meek Mill</h2>
+
+                                <h2 class="music-heading music-heading__title"><strong>Ooouuu (The Game Diss)</strong></h2>
+
+                                <p class="music-featuring">Feat. <a href="#">Meek Mill</a>, <a href="#">Another Meek Mill</a></p>
+
+                            </div><!--/.detailed-dropdown__item-content-->
+
+                        </li><!--/.detailed-dropdown__item-->
+
+                        <li class="detailed-dropdown__item detailed-dropdown__item--has-thumb u-clearfix">
+
+                            <div class="detailed-dropdown__item-thumb detailed-dropdown__item-thumb--radius">
+
+                                <img src="http://placehold.it/65x65" alt="" />
+
+                            </div><!--/.detailed-dropdown__item-thumb-->
+
+                            <div class="detailed-dropdown__item-content">
+
+                                <h2 class="music-heading music-heading__artist">Meek Mill</h2>
+
+                                <h2 class="music-heading music-heading__title"><strong>Ooouuu (The Game Diss)</strong></h2>
+
+                            </div><!--/.detailed-dropdown__item-content-->
+
+                        </li><!--/.detailed-dropdown__item-->
+
+                    </ul><!--/.detailed-dropdown__list-->
+
+                    <ul class="detailed-dropdown__list">
+
+                        <h3 class="detailed-dropdown__title">Playtlists</h3>
+
+                        <li class="detailed-dropdown__item detailed-dropdown__item--has-thumb u-clearfix">
+
+                            <div class="detailed-dropdown__item-thumb detailed-dropdown__item-thumb--radius">
+
+                                <img src="http://placehold.it/65x65" alt="" />
+
+                            </div><!--/.detailed-dropdown__item-thumb-->
+
+                            <div class="detailed-dropdown__item-content">
+
+                                <h2 class="music-heading music-heading__artist"><strong>Meek Mill</strong></h2>
+
+                                <ul class="music-meta">
+
+                                    <li class="music-meta__iten">Updated: 17 hours ago</li>
+
+                                </ul><!--/.music-meta-->
+
+                            </div><!--/.detailed-dropdown__item-content-->
+
+                        </li><!--/.detailed-dropdown__item-->
+
+                    </ul><!--/.detailed-dropdown__list-->
+
+                </div><!--/.detailed-dropdown__inner-->
+
+            </div><!--/.detailed-dropdown-->
 
         </div>
 

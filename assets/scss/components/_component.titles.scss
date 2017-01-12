@@ -5,3 +5,24 @@
     margin: 0;
     letter-spacing: -0.75px;
 }//.music-feed__title
+
+.music-heading {
+    font-size: 15px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    line-height: 1.3;
+}//.music-heading
+
+.music-featuring {
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+}//.music-featuring
+
+.music-meta li{
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+}//.music-meta li

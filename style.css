@@ -3856,7 +3856,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("assets/img/search-icon.png");
-    z-index: 1;
+    z-index: 4;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
@@ -3867,7 +3867,7 @@ img {
 }
 
 .search__submit {
-    z-index: 2;
+    z-index: 5;
     opacity: 0;
 }
 
@@ -3917,6 +3917,27 @@ button--radius {
     font-weight: 700;
     margin: 0;
     letter-spacing: -0.75px;
+}
+
+.music-heading {
+    font-size: 15px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.music-featuring {
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+}
+
+.music-meta li {
+    line-height: 1.6;
+    letter-spacing: -0.5px;
 }
 
 .user-alert {
@@ -4289,7 +4310,7 @@ button--radius {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    z-index: 5;
+    z-index: 8;
 }
 
 .music-artwork--large {
@@ -4309,7 +4330,7 @@ button--radius {
     left: 0;
     text-align: center;
     line-height: 1;
-    z-index: 6;
+    z-index: 9;
     color: #ffa200;
     font-size: 50px;
     cursor: pointer;
@@ -4335,7 +4356,7 @@ button--radius {
     border-bottom: #ffa200 3px solid;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     display: none;
-    z-index: 10;
+    z-index: 13;
 }
 
 .popout:before {
@@ -4346,7 +4367,7 @@ button--radius {
     position: absolute;
     top: 0;
     right: 8px;
-    z-index: 3;
+    z-index: 6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     transform: rotate(45deg);
 }
@@ -4354,7 +4375,7 @@ button--radius {
 .popout__inner {
     background: #fff;
     position: relative;
-    z-index: 4;
+    z-index: 7;
 }
 
 .popout__content {
@@ -4453,7 +4474,7 @@ button--radius {
 }
 
 .tooltip--active {
-    z-index: 11;
+    z-index: 14;
     animation: tooltipIn 0.25s forwards cubic-bezier(0.68, -2, 0.265, 3);
 }
 
@@ -4513,67 +4534,67 @@ button--radius {
 
 .waveform span:nth-child(1) {
     left: 3px;
-    height: 26px;
+    height: 41px;
 }
 
 .waveform span:nth-child(2) {
     left: 6px;
-    height: 20px;
+    height: 17px;
 }
 
 .waveform span:nth-child(3) {
     left: 9px;
-    height: 27px;
+    height: 12px;
 }
 
 .waveform span:nth-child(4) {
     left: 12px;
-    height: 29px;
+    height: 40px;
 }
 
 .waveform span:nth-child(5) {
     left: 15px;
-    height: 11px;
+    height: 9px;
 }
 
 .waveform span:nth-child(6) {
     left: 18px;
-    height: 18px;
+    height: 30px;
 }
 
 .waveform span:nth-child(7) {
     left: 21px;
-    height: 39px;
+    height: 37px;
 }
 
 .waveform span:nth-child(8) {
     left: 24px;
-    height: 35px;
+    height: 27px;
 }
 
 .waveform span:nth-child(9) {
     left: 27px;
-    height: 3px;
+    height: 39px;
 }
 
 .waveform span:nth-child(10) {
     left: 30px;
-    height: 9px;
+    height: 43px;
 }
 
 .waveform span:nth-child(11) {
     left: 33px;
-    height: 7px;
+    height: 40px;
 }
 
 .waveform span:nth-child(12) {
     left: 36px;
-    height: 6px;
+    height: 19px;
 }
 
 .waveform span:nth-child(13) {
     left: 39px;
-    height: 19px;
+    height: 20px;
 }
 
 .waveform span:nth-child(14) {
@@ -4583,102 +4604,102 @@ button--radius {
 
 .waveform span:nth-child(15) {
     left: 45px;
-    height: 13px;
+    height: 4px;
 }
 
 .waveform span:nth-child(16) {
     left: 48px;
-    height: 8px;
+    height: 25px;
 }
 
 .waveform span:nth-child(17) {
     left: 51px;
-    height: 1px;
+    height: 13px;
 }
 
 .waveform span:nth-child(18) {
     left: 54px;
-    height: 7px;
+    height: 27px;
 }
 
 .waveform span:nth-child(19) {
     left: 57px;
-    height: 11px;
+    height: 33px;
 }
 
 .waveform span:nth-child(20) {
     left: 60px;
-    height: 43px;
+    height: 40px;
 }
 
 .waveform span:nth-child(21) {
     left: 63px;
-    height: 17px;
+    height: 1px;
 }
 
 .waveform span:nth-child(22) {
     left: 66px;
-    height: 1px;
+    height: 2px;
 }
 
 .waveform span:nth-child(23) {
     left: 69px;
-    height: 14px;
+    height: 44px;
 }
 
 .waveform span:nth-child(24) {
     left: 72px;
-    height: 20px;
+    height: 40px;
 }
 
 .waveform span:nth-child(25) {
     left: 75px;
-    height: 3px;
+    height: 23px;
 }
 
 .waveform span:nth-child(26) {
     left: 78px;
-    height: 29px;
+    height: 20px;
 }
 
 .waveform span:nth-child(27) {
     left: 81px;
-    height: 5px;
+    height: 28px;
 }
 
 .waveform span:nth-child(28) {
     left: 84px;
-    height: 35px;
+    height: 39px;
 }
 
 .waveform span:nth-child(29) {
     left: 87px;
-    height: 27px;
+    height: 16px;
 }
 
 .waveform span:nth-child(30) {
     left: 90px;
-    height: 31px;
+    height: 6px;
 }
 
 .waveform span:nth-child(31) {
     left: 93px;
-    height: 15px;
+    height: 23px;
 }
 
 .waveform span:nth-child(32) {
     left: 96px;
-    height: 8px;
+    height: 11px;
 }
 
 .waveform span:nth-child(33) {
     left: 99px;
-    height: 43px;
+    height: 21px;
 }
 
 .waveform span:nth-child(34) {
     left: 102px;
-    height: 17px;
+    height: 32px;
 }
 
 .waveform span:nth-child(35) {
@@ -4688,77 +4709,77 @@ button--radius {
 
 .waveform span:nth-child(36) {
     left: 108px;
-    height: 27px;
+    height: 19px;
 }
 
 .waveform span:nth-child(37) {
     left: 111px;
-    height: 27px;
+    height: 18px;
 }
 
 .waveform span:nth-child(38) {
     left: 114px;
-    height: 5px;
+    height: 34px;
 }
 
 .waveform span:nth-child(39) {
     left: 117px;
-    height: 34px;
+    height: 44px;
 }
 
 .waveform span:nth-child(40) {
     left: 120px;
-    height: 20px;
+    height: 26px;
 }
 
 .waveform span:nth-child(41) {
     left: 123px;
-    height: 21px;
+    height: 29px;
 }
 
 .waveform span:nth-child(42) {
     left: 126px;
-    height: 10px;
+    height: 32px;
 }
 
 .waveform span:nth-child(43) {
     left: 129px;
-    height: 33px;
+    height: 15px;
 }
 
 .waveform span:nth-child(44) {
     left: 132px;
-    height: 12px;
+    height: 5px;
 }
 
 .waveform span:nth-child(45) {
     left: 135px;
-    height: 40px;
+    height: 38px;
 }
 
 .waveform span:nth-child(46) {
     left: 138px;
-    height: 14px;
+    height: 39px;
 }
 
 .waveform span:nth-child(47) {
     left: 141px;
-    height: 6px;
+    height: 21px;
 }
 
 .waveform span:nth-child(48) {
     left: 144px;
-    height: 34px;
+    height: 19px;
 }
 
 .waveform span:nth-child(49) {
     left: 147px;
-    height: 36px;
+    height: 19px;
 }
 
 .waveform span:nth-child(50) {
     left: 150px;
-    height: 27px;
+    height: 23px;
 }
 
 .waveform span:nth-child(51) {
@@ -4768,247 +4789,247 @@ button--radius {
 
 .waveform span:nth-child(52) {
     left: 156px;
-    height: 44px;
+    height: 28px;
 }
 
 .waveform span:nth-child(53) {
     left: 159px;
-    height: 37px;
+    height: 6px;
 }
 
 .waveform span:nth-child(54) {
     left: 162px;
-    height: 8px;
+    height: 12px;
 }
 
 .waveform span:nth-child(55) {
     left: 165px;
-    height: 7px;
+    height: 32px;
 }
 
 .waveform span:nth-child(56) {
     left: 168px;
-    height: 5px;
+    height: 29px;
 }
 
 .waveform span:nth-child(57) {
     left: 171px;
-    height: 8px;
+    height: 33px;
 }
 
 .waveform span:nth-child(58) {
     left: 174px;
-    height: 32px;
+    height: 3px;
 }
 
 .waveform span:nth-child(59) {
     left: 177px;
-    height: 43px;
+    height: 35px;
 }
 
 .waveform span:nth-child(60) {
     left: 180px;
-    height: 9px;
+    height: 15px;
 }
 
 .waveform span:nth-child(61) {
     left: 183px;
-    height: 40px;
+    height: 5px;
 }
 
 .waveform span:nth-child(62) {
     left: 186px;
-    height: 3px;
+    height: 37px;
 }
 
 .waveform span:nth-child(63) {
     left: 189px;
-    height: 10px;
+    height: 29px;
 }
 
 .waveform span:nth-child(64) {
     left: 192px;
-    height: 23px;
+    height: 12px;
 }
 
 .waveform span:nth-child(65) {
     left: 195px;
-    height: 22px;
+    height: 10px;
 }
 
 .waveform span:nth-child(66) {
     left: 198px;
-    height: 3px;
+    height: 6px;
 }
 
 .waveform span:nth-child(67) {
     left: 201px;
-    height: 1px;
+    height: 14px;
 }
 
 .waveform span:nth-child(68) {
     left: 204px;
-    height: 22px;
+    height: 24px;
 }
 
 .waveform span:nth-child(69) {
     left: 207px;
-    height: 15px;
+    height: 35px;
 }
 
 .waveform span:nth-child(70) {
     left: 210px;
-    height: 43px;
+    height: 19px;
 }
 
 .waveform span:nth-child(71) {
     left: 213px;
-    height: 42px;
+    height: 40px;
 }
 
 .waveform span:nth-child(72) {
     left: 216px;
-    height: 41px;
+    height: 22px;
 }
 
 .waveform span:nth-child(73) {
     left: 219px;
-    height: 36px;
+    height: 23px;
 }
 
 .waveform span:nth-child(74) {
     left: 222px;
-    height: 38px;
+    height: 11px;
 }
 
 .waveform span:nth-child(75) {
     left: 225px;
-    height: 29px;
+    height: 24px;
 }
 
 .waveform span:nth-child(76) {
     left: 228px;
-    height: 43px;
+    height: 8px;
 }
 
 .waveform span:nth-child(77) {
     left: 231px;
-    height: 44px;
+    height: 5px;
 }
 
 .waveform span:nth-child(78) {
     left: 234px;
-    height: 10px;
+    height: 3px;
 }
 
 .waveform span:nth-child(79) {
     left: 237px;
-    height: 22px;
+    height: 29px;
 }
 
 .waveform span:nth-child(80) {
     left: 240px;
-    height: 43px;
+    height: 13px;
 }
 
 .waveform span:nth-child(81) {
     left: 243px;
-    height: 30px;
+    height: 1px;
 }
 
 .waveform span:nth-child(82) {
     left: 246px;
-    height: 12px;
+    height: 15px;
 }
 
 .waveform span:nth-child(83) {
     left: 249px;
-    height: 42px;
+    height: 30px;
 }
 
 .waveform span:nth-child(84) {
     left: 252px;
-    height: 29px;
+    height: 18px;
 }
 
 .waveform span:nth-child(85) {
     left: 255px;
-    height: 27px;
+    height: 11px;
 }
 
 .waveform span:nth-child(86) {
     left: 258px;
-    height: 42px;
+    height: 23px;
 }
 
 .waveform span:nth-child(87) {
     left: 261px;
-    height: 43px;
+    height: 33px;
 }
 
 .waveform span:nth-child(88) {
     left: 264px;
-    height: 13px;
+    height: 10px;
 }
 
 .waveform span:nth-child(89) {
     left: 267px;
-    height: 19px;
+    height: 16px;
 }
 
 .waveform span:nth-child(90) {
     left: 270px;
-    height: 15px;
+    height: 24px;
 }
 
 .waveform span:nth-child(91) {
     left: 273px;
-    height: 34px;
+    height: 9px;
 }
 
 .waveform span:nth-child(92) {
     left: 276px;
-    height: 7px;
+    height: 39px;
 }
 
 .waveform span:nth-child(93) {
     left: 279px;
-    height: 31px;
+    height: 39px;
 }
 
 .waveform span:nth-child(94) {
     left: 282px;
-    height: 5px;
+    height: 22px;
 }
 
 .waveform span:nth-child(95) {
     left: 285px;
-    height: 37px;
+    height: 42px;
 }
 
 .waveform span:nth-child(96) {
     left: 288px;
-    height: 35px;
+    height: 36px;
 }
 
 .waveform span:nth-child(97) {
     left: 291px;
-    height: 22px;
+    height: 8px;
 }
 
 .waveform span:nth-child(98) {
     left: 294px;
-    height: 15px;
+    height: 21px;
 }
 
 .waveform span:nth-child(99) {
     left: 297px;
-    height: 9px;
+    height: 35px;
 }
 
 .waveform span:nth-child(100) {
     left: 300px;
-    height: 18px;
+    height: 3px;
 }
 
 .waveform span:nth-child(101) {
@@ -5018,17 +5039,17 @@ button--radius {
 
 .waveform span:nth-child(102) {
     left: 306px;
-    height: 11px;
+    height: 30px;
 }
 
 .waveform span:nth-child(103) {
     left: 309px;
-    height: 34px;
+    height: 20px;
 }
 
 .waveform span:nth-child(104) {
     left: 312px;
-    height: 9px;
+    height: 44px;
 }
 
 .waveform span:nth-child(105) {
@@ -5038,47 +5059,47 @@ button--radius {
 
 .waveform span:nth-child(106) {
     left: 318px;
-    height: 23px;
+    height: 37px;
 }
 
 .waveform span:nth-child(107) {
     left: 321px;
-    height: 15px;
+    height: 5px;
 }
 
 .waveform span:nth-child(108) {
     left: 324px;
-    height: 29px;
+    height: 23px;
 }
 
 .waveform span:nth-child(109) {
     left: 327px;
-    height: 40px;
+    height: 26px;
 }
 
 .waveform span:nth-child(110) {
     left: 330px;
-    height: 18px;
+    height: 1px;
 }
 
 .waveform span:nth-child(111) {
     left: 333px;
-    height: 1px;
+    height: 9px;
 }
 
 .waveform span:nth-child(112) {
     left: 336px;
-    height: 9px;
+    height: 27px;
 }
 
 .waveform span:nth-child(113) {
     left: 339px;
-    height: 38px;
+    height: 4px;
 }
 
 .waveform span:nth-child(114) {
     left: 342px;
-    height: 28px;
+    height: 19px;
 }
 
 .waveform span:nth-child(115) {
@@ -5088,47 +5109,47 @@ button--radius {
 
 .waveform span:nth-child(116) {
     left: 348px;
-    height: 16px;
+    height: 44px;
 }
 
 .waveform span:nth-child(117) {
     left: 351px;
-    height: 6px;
+    height: 36px;
 }
 
 .waveform span:nth-child(118) {
     left: 354px;
-    height: 35px;
+    height: 19px;
 }
 
 .waveform span:nth-child(119) {
     left: 357px;
-    height: 6px;
+    height: 8px;
 }
 
 .waveform span:nth-child(120) {
     left: 360px;
-    height: 40px;
+    height: 24px;
 }
 
 .waveform span:nth-child(121) {
     left: 363px;
-    height: 5px;
+    height: 23px;
 }
 
 .waveform span:nth-child(122) {
     left: 366px;
-    height: 15px;
+    height: 27px;
 }
 
 .waveform span:nth-child(123) {
     left: 369px;
-    height: 41px;
+    height: 15px;
 }
 
 .waveform span:nth-child(124) {
     left: 372px;
-    height: 44px;
+    height: 30px;
 }
 
 .waveform span:nth-child(125) {
@@ -5138,122 +5159,122 @@ button--radius {
 
 .waveform span:nth-child(126) {
     left: 378px;
-    height: 15px;
+    height: 14px;
 }
 
 .waveform span:nth-child(127) {
     left: 381px;
-    height: 12px;
+    height: 37px;
 }
 
 .waveform span:nth-child(128) {
     left: 384px;
-    height: 13px;
+    height: 1px;
 }
 
 .waveform span:nth-child(129) {
     left: 387px;
-    height: 32px;
+    height: 30px;
 }
 
 .waveform span:nth-child(130) {
     left: 390px;
-    height: 25px;
+    height: 40px;
 }
 
 .waveform span:nth-child(131) {
     left: 393px;
-    height: 5px;
+    height: 7px;
 }
 
 .waveform span:nth-child(132) {
     left: 396px;
-    height: 24px;
+    height: 31px;
 }
 
 .waveform span:nth-child(133) {
     left: 399px;
-    height: 6px;
+    height: 8px;
 }
 
 .waveform span:nth-child(134) {
     left: 402px;
-    height: 40px;
+    height: 31px;
 }
 
 .waveform span:nth-child(135) {
     left: 405px;
-    height: 29px;
+    height: 39px;
 }
 
 .waveform span:nth-child(136) {
     left: 408px;
-    height: 25px;
+    height: 6px;
 }
 
 .waveform span:nth-child(137) {
     left: 411px;
-    height: 20px;
+    height: 32px;
 }
 
 .waveform span:nth-child(138) {
     left: 414px;
-    height: 11px;
+    height: 37px;
 }
 
 .waveform span:nth-child(139) {
     left: 417px;
-    height: 42px;
+    height: 19px;
 }
 
 .waveform span:nth-child(140) {
     left: 420px;
-    height: 7px;
+    height: 26px;
 }
 
 .waveform span:nth-child(141) {
     left: 423px;
-    height: 41px;
+    height: 37px;
 }
 
 .waveform span:nth-child(142) {
     left: 426px;
-    height: 28px;
+    height: 42px;
 }
 
 .waveform span:nth-child(143) {
     left: 429px;
-    height: 30px;
+    height: 34px;
 }
 
 .waveform span:nth-child(144) {
     left: 432px;
-    height: 30px;
+    height: 6px;
 }
 
 .waveform span:nth-child(145) {
     left: 435px;
-    height: 32px;
+    height: 37px;
 }
 
 .waveform span:nth-child(146) {
     left: 438px;
-    height: 44px;
+    height: 31px;
 }
 
 .waveform span:nth-child(147) {
     left: 441px;
-    height: 27px;
+    height: 40px;
 }
 
 .waveform span:nth-child(148) {
     left: 444px;
-    height: 2px;
+    height: 24px;
 }
 
 .waveform span:nth-child(149) {
     left: 447px;
-    height: 27px;
+    height: 33px;
 }
 
 .waveform span:nth-child(150) {
@@ -5263,17 +5284,17 @@ button--radius {
 
 .waveform span:nth-child(151) {
     left: 453px;
-    height: 29px;
+    height: 6px;
 }
 
 .waveform span:nth-child(152) {
     left: 456px;
-    height: 40px;
+    height: 12px;
 }
 
 .waveform span:nth-child(153) {
     left: 459px;
-    height: 2px;
+    height: 28px;
 }
 
 .waveform span:nth-child(154) {
@@ -5283,227 +5304,227 @@ button--radius {
 
 .waveform span:nth-child(155) {
     left: 465px;
-    height: 15px;
+    height: 26px;
 }
 
 .waveform span:nth-child(156) {
     left: 468px;
-    height: 20px;
+    height: 14px;
 }
 
 .waveform span:nth-child(157) {
     left: 471px;
-    height: 26px;
+    height: 11px;
 }
 
 .waveform span:nth-child(158) {
     left: 474px;
-    height: 2px;
+    height: 24px;
 }
 
 .waveform span:nth-child(159) {
     left: 477px;
-    height: 16px;
+    height: 1px;
 }
 
 .waveform span:nth-child(160) {
     left: 480px;
-    height: 12px;
+    height: 28px;
 }
 
 .waveform span:nth-child(161) {
     left: 483px;
-    height: 31px;
+    height: 14px;
 }
 
 .waveform span:nth-child(162) {
     left: 486px;
-    height: 9px;
+    height: 36px;
 }
 
 .waveform span:nth-child(163) {
     left: 489px;
-    height: 44px;
+    height: 9px;
 }
 
 .waveform span:nth-child(164) {
     left: 492px;
-    height: 25px;
+    height: 17px;
 }
 
 .waveform span:nth-child(165) {
     left: 495px;
-    height: 17px;
+    height: 43px;
 }
 
 .waveform span:nth-child(166) {
     left: 498px;
-    height: 34px;
+    height: 10px;
 }
 
 .waveform span:nth-child(167) {
     left: 501px;
-    height: 24px;
+    height: 31px;
 }
 
 .waveform span:nth-child(168) {
     left: 504px;
-    height: 32px;
+    height: 31px;
 }
 
 .waveform span:nth-child(169) {
     left: 507px;
-    height: 27px;
+    height: 4px;
 }
 
 .waveform span:nth-child(170) {
     left: 510px;
-    height: 33px;
+    height: 14px;
 }
 
 .waveform span:nth-child(171) {
     left: 513px;
-    height: 19px;
+    height: 44px;
 }
 
 .waveform span:nth-child(172) {
     left: 516px;
-    height: 38px;
+    height: 14px;
 }
 
 .waveform span:nth-child(173) {
     left: 519px;
-    height: 7px;
+    height: 27px;
 }
 
 .waveform span:nth-child(174) {
     left: 522px;
-    height: 18px;
+    height: 11px;
 }
 
 .waveform span:nth-child(175) {
     left: 525px;
-    height: 13px;
+    height: 4px;
 }
 
 .waveform span:nth-child(176) {
     left: 528px;
-    height: 13px;
+    height: 10px;
 }
 
 .waveform span:nth-child(177) {
     left: 531px;
-    height: 2px;
+    height: 18px;
 }
 
 .waveform span:nth-child(178) {
     left: 534px;
-    height: 32px;
+    height: 12px;
 }
 
 .waveform span:nth-child(179) {
     left: 537px;
-    height: 4px;
+    height: 17px;
 }
 
 .waveform span:nth-child(180) {
     left: 540px;
-    height: 38px;
+    height: 18px;
 }
 
 .waveform span:nth-child(181) {
     left: 543px;
-    height: 33px;
+    height: 23px;
 }
 
 .waveform span:nth-child(182) {
     left: 546px;
-    height: 18px;
+    height: 33px;
 }
 
 .waveform span:nth-child(183) {
     left: 549px;
-    height: 2px;
+    height: 17px;
 }
 
 .waveform span:nth-child(184) {
     left: 552px;
-    height: 9px;
+    height: 7px;
 }
 
 .waveform span:nth-child(185) {
     left: 555px;
-    height: 5px;
+    height: 34px;
 }
 
 .waveform span:nth-child(186) {
     left: 558px;
-    height: 42px;
+    height: 23px;
 }
 
 .waveform span:nth-child(187) {
     left: 561px;
-    height: 32px;
+    height: 1px;
 }
 
 .waveform span:nth-child(188) {
     left: 564px;
-    height: 3px;
+    height: 39px;
 }
 
 .waveform span:nth-child(189) {
     left: 567px;
-    height: 2px;
+    height: 27px;
 }
 
 .waveform span:nth-child(190) {
     left: 570px;
-    height: 6px;
+    height: 2px;
 }
 
 .waveform span:nth-child(191) {
     left: 573px;
-    height: 9px;
+    height: 31px;
 }
 
 .waveform span:nth-child(192) {
     left: 576px;
-    height: 28px;
+    height: 31px;
 }
 
 .waveform span:nth-child(193) {
     left: 579px;
-    height: 42px;
+    height: 16px;
 }
 
 .waveform span:nth-child(194) {
     left: 582px;
-    height: 18px;
+    height: 25px;
 }
 
 .waveform span:nth-child(195) {
     left: 585px;
-    height: 35px;
+    height: 30px;
 }
 
 .waveform span:nth-child(196) {
     left: 588px;
-    height: 31px;
+    height: 17px;
 }
 
 .waveform span:nth-child(197) {
     left: 591px;
-    height: 31px;
+    height: 23px;
 }
 
 .waveform span:nth-child(198) {
     left: 594px;
-    height: 39px;
+    height: 28px;
 }
 
 .waveform span:nth-child(199) {
     left: 597px;
-    height: 10px;
+    height: 22px;
 }
 
 .waveform span:nth-child(200) {
@@ -5513,132 +5534,132 @@ button--radius {
 
 .waveform span:nth-child(201) {
     left: 603px;
-    height: 20px;
+    height: 34px;
 }
 
 .waveform span:nth-child(202) {
     left: 606px;
-    height: 3px;
+    height: 11px;
 }
 
 .waveform span:nth-child(203) {
     left: 609px;
-    height: 10px;
+    height: 39px;
 }
 
 .waveform span:nth-child(204) {
     left: 612px;
-    height: 15px;
+    height: 38px;
 }
 
 .waveform span:nth-child(205) {
     left: 615px;
-    height: 28px;
+    height: 21px;
 }
 
 .waveform span:nth-child(206) {
     left: 618px;
-    height: 14px;
+    height: 8px;
 }
 
 .waveform span:nth-child(207) {
     left: 621px;
-    height: 1px;
+    height: 13px;
 }
 
 .waveform span:nth-child(208) {
     left: 624px;
-    height: 14px;
+    height: 23px;
 }
 
 .waveform span:nth-child(209) {
     left: 627px;
-    height: 37px;
+    height: 30px;
 }
 
 .waveform span:nth-child(210) {
     left: 630px;
-    height: 29px;
+    height: 27px;
 }
 
 .waveform span:nth-child(211) {
     left: 633px;
-    height: 14px;
+    height: 8px;
 }
 
 .waveform span:nth-child(212) {
     left: 636px;
-    height: 1px;
+    height: 44px;
 }
 
 .waveform span:nth-child(213) {
     left: 639px;
-    height: 35px;
+    height: 31px;
 }
 
 .waveform span:nth-child(214) {
     left: 642px;
-    height: 44px;
+    height: 13px;
 }
 
 .waveform span:nth-child(215) {
     left: 645px;
-    height: 23px;
+    height: 31px;
 }
 
 .waveform span:nth-child(216) {
     left: 648px;
-    height: 9px;
+    height: 41px;
 }
 
 .waveform span:nth-child(217) {
     left: 651px;
-    height: 30px;
+    height: 26px;
 }
 
 .waveform span:nth-child(218) {
     left: 654px;
-    height: 24px;
+    height: 6px;
 }
 
 .waveform span:nth-child(219) {
     left: 657px;
-    height: 23px;
+    height: 35px;
 }
 
 .waveform span:nth-child(220) {
     left: 660px;
-    height: 21px;
+    height: 9px;
 }
 
 .waveform span:nth-child(221) {
     left: 663px;
-    height: 9px;
+    height: 26px;
 }
 
 .waveform span:nth-child(222) {
     left: 666px;
-    height: 36px;
+    height: 38px;
 }
 
 .waveform span:nth-child(223) {
     left: 669px;
-    height: 4px;
+    height: 21px;
 }
 
 .waveform span:nth-child(224) {
     left: 672px;
-    height: 6px;
+    height: 8px;
 }
 
 .waveform span:nth-child(225) {
     left: 675px;
-    height: 16px;
+    height: 10px;
 }
 
 .waveform span:nth-child(226) {
     left: 678px;
-    height: 31px;
+    height: 36px;
 }
 
 .waveform span:nth-child(227) {
@@ -5653,122 +5674,122 @@ button--radius {
 
 .waveform span:nth-child(229) {
     left: 687px;
-    height: 32px;
+    height: 42px;
 }
 
 .waveform span:nth-child(230) {
     left: 690px;
-    height: 27px;
+    height: 24px;
 }
 
 .waveform span:nth-child(231) {
     left: 693px;
-    height: 16px;
+    height: 3px;
 }
 
 .waveform span:nth-child(232) {
     left: 696px;
-    height: 6px;
+    height: 43px;
 }
 
 .waveform span:nth-child(233) {
     left: 699px;
-    height: 22px;
+    height: 9px;
 }
 
 .waveform span:nth-child(234) {
     left: 702px;
-    height: 32px;
+    height: 8px;
 }
 
 .waveform span:nth-child(235) {
     left: 705px;
-    height: 40px;
+    height: 24px;
 }
 
 .waveform span:nth-child(236) {
     left: 708px;
-    height: 30px;
+    height: 39px;
 }
 
 .waveform span:nth-child(237) {
     left: 711px;
-    height: 15px;
+    height: 38px;
 }
 
 .waveform span:nth-child(238) {
     left: 714px;
-    height: 41px;
+    height: 43px;
 }
 
 .waveform span:nth-child(239) {
     left: 717px;
-    height: 9px;
+    height: 37px;
 }
 
 .waveform span:nth-child(240) {
     left: 720px;
-    height: 44px;
+    height: 16px;
 }
 
 .waveform span:nth-child(241) {
     left: 723px;
-    height: 42px;
+    height: 15px;
 }
 
 .waveform span:nth-child(242) {
     left: 726px;
-    height: 5px;
+    height: 36px;
 }
 
 .waveform span:nth-child(243) {
     left: 729px;
-    height: 19px;
+    height: 20px;
 }
 
 .waveform span:nth-child(244) {
     left: 732px;
-    height: 28px;
+    height: 1px;
 }
 
 .waveform span:nth-child(245) {
     left: 735px;
-    height: 37px;
+    height: 13px;
 }
 
 .waveform span:nth-child(246) {
     left: 738px;
-    height: 15px;
+    height: 32px;
 }
 
 .waveform span:nth-child(247) {
     left: 741px;
-    height: 20px;
+    height: 29px;
 }
 
 .waveform span:nth-child(248) {
     left: 744px;
-    height: 22px;
+    height: 44px;
 }
 
 .waveform span:nth-child(249) {
     left: 747px;
-    height: 29px;
+    height: 34px;
 }
 
 .waveform span:nth-child(250) {
     left: 750px;
-    height: 7px;
+    height: 21px;
 }
 
 .waveform span:nth-child(251) {
     left: 753px;
-    height: 21px;
+    height: 29px;
 }
 
 .waveform span:nth-child(252) {
     left: 756px;
-    height: 9px;
+    height: 44px;
 }
 
 .waveform span:nth-child(253) {
@@ -5778,312 +5799,312 @@ button--radius {
 
 .waveform span:nth-child(254) {
     left: 762px;
-    height: 13px;
+    height: 2px;
 }
 
 .waveform span:nth-child(255) {
     left: 765px;
-    height: 7px;
+    height: 17px;
 }
 
 .waveform span:nth-child(256) {
     left: 768px;
-    height: 24px;
+    height: 40px;
 }
 
 .waveform span:nth-child(257) {
     left: 771px;
-    height: 4px;
+    height: 18px;
 }
 
 .waveform span:nth-child(258) {
     left: 774px;
-    height: 25px;
+    height: 31px;
 }
 
 .waveform span:nth-child(259) {
     left: 777px;
-    height: 42px;
+    height: 31px;
 }
 
 .waveform span:nth-child(260) {
     left: 780px;
-    height: 43px;
+    height: 16px;
 }
 
 .waveform span:nth-child(261) {
     left: 783px;
-    height: 24px;
+    height: 19px;
 }
 
 .waveform span:nth-child(262) {
     left: 786px;
-    height: 44px;
+    height: 37px;
 }
 
 .waveform span:nth-child(263) {
     left: 789px;
-    height: 40px;
+    height: 43px;
 }
 
 .waveform span:nth-child(264) {
     left: 792px;
-    height: 10px;
+    height: 5px;
 }
 
 .waveform span:nth-child(265) {
     left: 795px;
-    height: 32px;
+    height: 10px;
 }
 
 .waveform span:nth-child(266) {
     left: 798px;
-    height: 15px;
+    height: 30px;
 }
 
 .waveform span:nth-child(267) {
     left: 801px;
-    height: 28px;
+    height: 41px;
 }
 
 .waveform span:nth-child(268) {
     left: 804px;
-    height: 23px;
+    height: 37px;
 }
 
 .waveform span:nth-child(269) {
     left: 807px;
-    height: 40px;
+    height: 15px;
 }
 
 .waveform span:nth-child(270) {
     left: 810px;
-    height: 41px;
+    height: 17px;
 }
 
 .waveform span:nth-child(271) {
     left: 813px;
-    height: 13px;
+    height: 40px;
 }
 
 .waveform span:nth-child(272) {
     left: 816px;
-    height: 2px;
+    height: 15px;
 }
 
 .waveform span:nth-child(273) {
     left: 819px;
-    height: 36px;
+    height: 21px;
 }
 
 .waveform span:nth-child(274) {
     left: 822px;
-    height: 44px;
+    height: 36px;
 }
 
 .waveform span:nth-child(275) {
     left: 825px;
-    height: 11px;
+    height: 18px;
 }
 
 .waveform span:nth-child(276) {
     left: 828px;
-    height: 32px;
+    height: 5px;
 }
 
 .waveform span:nth-child(277) {
     left: 831px;
-    height: 34px;
+    height: 13px;
 }
 
 .waveform span:nth-child(278) {
     left: 834px;
-    height: 4px;
+    height: 21px;
 }
 
 .waveform span:nth-child(279) {
     left: 837px;
-    height: 38px;
+    height: 36px;
 }
 
 .waveform span:nth-child(280) {
     left: 840px;
-    height: 3px;
+    height: 35px;
 }
 
 .waveform span:nth-child(281) {
     left: 843px;
-    height: 36px;
+    height: 10px;
 }
 
 .waveform span:nth-child(282) {
     left: 846px;
-    height: 4px;
+    height: 19px;
 }
 
 .waveform span:nth-child(283) {
     left: 849px;
-    height: 8px;
+    height: 34px;
 }
 
 .waveform span:nth-child(284) {
     left: 852px;
-    height: 8px;
+    height: 13px;
 }
 
 .waveform span:nth-child(285) {
     left: 855px;
-    height: 35px;
+    height: 34px;
 }
 
 .waveform span:nth-child(286) {
     left: 858px;
-    height: 14px;
+    height: 26px;
 }
 
 .waveform span:nth-child(287) {
     left: 861px;
-    height: 4px;
+    height: 42px;
 }
 
 .waveform span:nth-child(288) {
     left: 864px;
-    height: 31px;
+    height: 44px;
 }
 
 .waveform span:nth-child(289) {
     left: 867px;
-    height: 43px;
+    height: 41px;
 }
 
 .waveform span:nth-child(290) {
     left: 870px;
-    height: 28px;
+    height: 24px;
 }
 
 .waveform span:nth-child(291) {
     left: 873px;
-    height: 35px;
+    height: 36px;
 }
 
 .waveform span:nth-child(292) {
     left: 876px;
-    height: 37px;
+    height: 17px;
 }
 
 .waveform span:nth-child(293) {
     left: 879px;
-    height: 22px;
+    height: 17px;
 }
 
 .waveform span:nth-child(294) {
     left: 882px;
-    height: 34px;
+    height: 3px;
 }
 
 .waveform span:nth-child(295) {
     left: 885px;
-    height: 34px;
+    height: 2px;
 }
 
 .waveform span:nth-child(296) {
     left: 888px;
-    height: 20px;
+    height: 16px;
 }
 
 .waveform span:nth-child(297) {
     left: 891px;
-    height: 35px;
+    height: 4px;
 }
 
 .waveform span:nth-child(298) {
     left: 894px;
-    height: 14px;
+    height: 39px;
 }
 
 .waveform span:nth-child(299) {
     left: 897px;
-    height: 35px;
+    height: 32px;
 }
 
 .waveform span:nth-child(300) {
     left: 900px;
-    height: 16px;
+    height: 28px;
 }
 
 .waveform span:nth-child(301) {
     left: 903px;
-    height: 16px;
+    height: 39px;
 }
 
 .waveform span:nth-child(302) {
     left: 906px;
-    height: 18px;
+    height: 23px;
 }
 
 .waveform span:nth-child(303) {
     left: 909px;
-    height: 11px;
+    height: 21px;
 }
 
 .waveform span:nth-child(304) {
     left: 912px;
-    height: 35px;
+    height: 43px;
 }
 
 .waveform span:nth-child(305) {
     left: 915px;
-    height: 3px;
+    height: 25px;
 }
 
 .waveform span:nth-child(306) {
     left: 918px;
-    height: 32px;
+    height: 36px;
 }
 
 .waveform span:nth-child(307) {
     left: 921px;
-    height: 10px;
+    height: 13px;
 }
 
 .waveform span:nth-child(308) {
     left: 924px;
-    height: 3px;
+    height: 8px;
 }
 
 .waveform span:nth-child(309) {
     left: 927px;
-    height: 24px;
+    height: 3px;
 }
 
 .waveform span:nth-child(310) {
     left: 930px;
-    height: 15px;
+    height: 21px;
 }
 
 .waveform span:nth-child(311) {
     left: 933px;
-    height: 8px;
+    height: 29px;
 }
 
 .waveform span:nth-child(312) {
     left: 936px;
-    height: 17px;
+    height: 38px;
 }
 
 .waveform span:nth-child(313) {
     left: 939px;
-    height: 25px;
+    height: 42px;
 }
 
 .waveform span:nth-child(314) {
     left: 942px;
-    height: 27px;
+    height: 36px;
 }
 
 .waveform span:nth-child(315) {
     left: 945px;
-    height: 12px;
+    height: 11px;
 }
 
 .waveform span:nth-child(316) {
@@ -6098,167 +6119,167 @@ button--radius {
 
 .waveform span:nth-child(318) {
     left: 954px;
-    height: 18px;
+    height: 23px;
 }
 
 .waveform span:nth-child(319) {
     left: 957px;
-    height: 16px;
+    height: 35px;
 }
 
 .waveform span:nth-child(320) {
     left: 960px;
-    height: 39px;
+    height: 36px;
 }
 
 .waveform span:nth-child(321) {
     left: 963px;
-    height: 10px;
+    height: 32px;
 }
 
 .waveform span:nth-child(322) {
     left: 966px;
-    height: 30px;
+    height: 36px;
 }
 
 .waveform span:nth-child(323) {
     left: 969px;
-    height: 30px;
+    height: 42px;
 }
 
 .waveform span:nth-child(324) {
     left: 972px;
-    height: 17px;
+    height: 19px;
 }
 
 .waveform span:nth-child(325) {
     left: 975px;
-    height: 7px;
+    height: 17px;
 }
 
 .waveform span:nth-child(326) {
     left: 978px;
-    height: 37px;
+    height: 24px;
 }
 
 .waveform span:nth-child(327) {
     left: 981px;
-    height: 11px;
+    height: 34px;
 }
 
 .waveform span:nth-child(328) {
     left: 984px;
-    height: 4px;
+    height: 11px;
 }
 
 .waveform span:nth-child(329) {
     left: 987px;
-    height: 7px;
+    height: 15px;
 }
 
 .waveform span:nth-child(330) {
     left: 990px;
-    height: 14px;
+    height: 17px;
 }
 
 .waveform span:nth-child(331) {
     left: 993px;
-    height: 20px;
+    height: 40px;
 }
 
 .waveform span:nth-child(332) {
     left: 996px;
-    height: 14px;
+    height: 37px;
 }
 
 .waveform span:nth-child(333) {
     left: 999px;
-    height: 18px;
+    height: 28px;
 }
 
 .waveform span:nth-child(334) {
     left: 1002px;
-    height: 32px;
+    height: 39px;
 }
 
 .waveform span:nth-child(335) {
     left: 1005px;
-    height: 13px;
+    height: 14px;
 }
 
 .waveform span:nth-child(336) {
     left: 1008px;
-    height: 33px;
+    height: 5px;
 }
 
 .waveform span:nth-child(337) {
     left: 1011px;
-    height: 21px;
+    height: 10px;
 }
 
 .waveform span:nth-child(338) {
     left: 1014px;
-    height: 16px;
+    height: 1px;
 }
 
 .waveform span:nth-child(339) {
     left: 1017px;
-    height: 36px;
+    height: 33px;
 }
 
 .waveform span:nth-child(340) {
     left: 1020px;
-    height: 22px;
+    height: 27px;
 }
 
 .waveform span:nth-child(341) {
     left: 1023px;
-    height: 1px;
+    height: 11px;
 }
 
 .waveform span:nth-child(342) {
     left: 1026px;
-    height: 1px;
+    height: 39px;
 }
 
 .waveform span:nth-child(343) {
     left: 1029px;
-    height: 43px;
+    height: 24px;
 }
 
 .waveform span:nth-child(344) {
     left: 1032px;
-    height: 44px;
+    height: 39px;
 }
 
 .waveform span:nth-child(345) {
     left: 1035px;
-    height: 13px;
+    height: 40px;
 }
 
 .waveform span:nth-child(346) {
     left: 1038px;
-    height: 26px;
+    height: 28px;
 }
 
 .waveform span:nth-child(347) {
     left: 1041px;
-    height: 12px;
+    height: 7px;
 }
 
 .waveform span:nth-child(348) {
     left: 1044px;
-    height: 6px;
+    height: 28px;
 }
 
 .waveform span:nth-child(349) {
     left: 1047px;
-    height: 27px;
+    height: 32px;
 }
 
 .waveform span:nth-child(350) {
     left: 1050px;
-    height: 10px;
+    height: 2px;
 }
 
 .waveform span:nth-child(1) {
@@ -6781,7 +6802,7 @@ button--radius {
     bottom: 0;
     left: 0;
     border-top: #333 7px solid;
-    z-index: 14;
+    z-index: 17;
     transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transform: translateY(100%);
 }
@@ -6797,7 +6818,7 @@ button--radius {
     width: 29%;
     top: -7px;
     left: 0;
-    z-index: 14;
+    z-index: 17;
 }
 
 .player__slider:after {
@@ -6880,7 +6901,7 @@ button--radius {
         text-align: center;
         line-height: 83px;
         display: none;
-        z-index: 15;
+        z-index: 18;
     }
 }
 
@@ -6934,7 +6955,7 @@ button--radius {
     top: -3px;
     cursor: pointer;
     float: right;
-    z-index: 16;
+    z-index: 19;
 }
 
 @media screen and (min-width: 1024px) {
@@ -7021,6 +7042,81 @@ button--radius {
     padding: 0 10px;
 }
 
+.detailed-dropdown {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.09);
+    position: relative;
+    border: #eaeaea 1px solid;
+}
+
+.detailed-dropdown__inner {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.detailed-dropdown--has-triangle:before {
+    content: '';
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border: #eaeaea 1px solid;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.09);
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.detailed-dropdown__title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.detailed-dropdown__list:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.detailed-dropdown__item {
+    padding: 7px 0;
+}
+
+.detailed-dropdown__item:first-child {
+    padding-top: 0;
+}
+
+.detailed-dropdown__item--has-thumb {
+    display: flex;
+    align-items: center;
+}
+
+.detailed-dropdown__item-content {
+    width: 100%;
+}
+
+.detailed-dropdown__item-thumb {
+    width: 65px;
+    float: left;
+    overflow: hidden;
+}
+
+.detailed-dropdown__item-thumb--circle {
+    border-radius: 50%;
+}
+
+.detailed-dropdown__item-thumb--radius {
+    border-radius: 5px;
+}
+
+.detailed-dropdown__item-thumb + .detailed-dropdown__item-content {
+    padding-left: 10px;
+    width: calc(100% - 65px);
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -7086,7 +7182,7 @@ label > .label-body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 13;
+    z-index: 16;
 }
 
 .main-header__logo {
@@ -7163,7 +7259,7 @@ label > .label-body {
 .main-header__block {
     padding: 0 20px;
     position: relative;
-    z-index: 9;
+    z-index: 12;
 }
 
 .main-header__block--summary {
@@ -7199,7 +7295,7 @@ label > .label-body {
     background: #fff;
     padding: 10px 20px;
     position: relative;
-    z-index: 8;
+    z-index: 11;
     cursor: pointer;
 }
 
@@ -7213,7 +7309,7 @@ label > .label-body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 7;
+    z-index: 10;
     transform: translateY(-100%);
     transition: 0.2s ease-in-out;
 }
@@ -7307,7 +7403,7 @@ label > .label-body {
     -webkit-overflow-scrolling: touch;
     transition: 0.2s ease-in-out;
     transform: translateX(-100%);
-    z-index: 12;
+    z-index: 15;
 }
 
 .site-sidebar--open {
